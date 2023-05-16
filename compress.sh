@@ -3,7 +3,7 @@
 ARTIFACT=demo
 MAINCLASS=com.example.DemoApplication
 VERSION=0.0.1-SNAPSHOT
-UPX_VERSION=4.02
+UPX_VERSION=4.0.2
 UPX=https://github.com/upx/upx/releases/download/v4.0.2/upx-4.0.2-amd64_linux.tar.xz
 
 GREEN='\033[0;32m'

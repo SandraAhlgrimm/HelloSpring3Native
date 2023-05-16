@@ -16,6 +16,7 @@ echo "Building native image $ARTIFACT with Maven"
 if [[ -f "target/demo" ]]
 then
   printf "${GREEN}SUCCESS${NC}\n"
+  mkdir -p target/function
   mv target/demo target/function/demo
   exit 0
 else
