@@ -12,7 +12,7 @@ public class HelloController {
     
     @GetMapping("/")
     String index() {
-        String message = "Hello, World!";
+        String message = "Hello, Functions World!";
         logger.info(message);
         return message;
     }
