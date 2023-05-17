@@ -15,7 +15,7 @@ wget https://github.com/upx/upx/releases/download/v$UPX_VERSION/upx-$UPX_VERSION
 tar -xvf upx-$UPX_VERSION-amd64_linux.tar.xz
 
 echo "Compressing $ARTIFACT with UPX"
-./upx-$UPX_VERSION-amd64_linux/upx --best target/function/demo
+./upx-$UPX_VERSION-amd64_linux/upx --best target/function/hello
 
 echo "Compressing the folder with ZIP"
 cd target/function
