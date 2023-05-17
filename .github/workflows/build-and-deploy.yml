@@ -4,6 +4,8 @@ on:
     branches:
       - master
       - dev
+env:
+  AZ_FUNCTION_NAME: 'spring-native-image'
 jobs:
     build-and-deploy:
         runs-on: ubuntu-latest
@@ -25,5 +27,5 @@ jobs:
             - name: 'Deploy to Azure Function'
               uses: Azure/functions-action@v1
               with:
-                app-name: ${{ secrets.AZ_FUNCTION_NAME_APP }}
+                app-name: ${{ env.AZ_FUNCTION_NAME }}
                 package: target/native_spring_function.zip
