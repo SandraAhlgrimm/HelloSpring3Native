@@ -20,7 +20,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Build Spring Boot Function with GraalVM
         run: |
-          ./mvnw -Pnative native:compile
+          ./mvnw -Pnative package
       - name: Create package
         run: |
           cp -r src/main/function target
