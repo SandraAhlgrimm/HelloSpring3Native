@@ -2,7 +2,7 @@
 
 As inspired by https://github.com/jdubois/azure-native-spring-function
 
-Initialize project with the Spring Initializer on https://start.spring.io/ or within the IDE of your choice.
+Initialize project with the Spring Initializr on https://start.spring.io/ or within the IDE of your choice.
 
 Add the functions declaration to your folder structure and make sure it gets copied into the target folder.
 
